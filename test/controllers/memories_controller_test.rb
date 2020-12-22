@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class MemorysControllerTest < ActionDispatch::IntegrationTest
+class MemoriesControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get memorys_index_url
+    get memories_index_url
     assert_response :success
   end
 
