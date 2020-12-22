@@ -1,0 +1,10 @@
+<div class="card">
+  <%= link_to image_tag(memory.image, class: :card__img ), root_path%>
+  <div class="card__body">
+    <%= link_to memory.title, root_path, method: :get, class: :card__title%>
+    <p class="card__summary">
+      <%= memory.days %>
+    </p>
+    <%= link_to "by #{memory.user.name} ", root_path, class: :card__user %>
+  </div>
+</div>
